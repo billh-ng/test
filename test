@@ -1,0 +1,22 @@
+import pyautogui
+import keyboard
+import time
+
+pyautogui.hotkey("win", "r")
+time.sleep(1)
+pyautogui.write("https://www.instagram.com/direct/t/17851334867779382/")
+time.sleep(1)
+pyautogui.press("enter")
+time.sleep(10)
+
+for i in range(5,0,-1):
+    pyautogui.write(str(i))
+    pyautogui.press("enter")
+    time.sleep(1)
+
+while True:
+    if keyboard.is_pressed('s'):
+        break
+    else:
+        pyautogui.write("a")
+        pyautogui.press("enter")
